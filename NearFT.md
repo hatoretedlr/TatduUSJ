@@ -25,19 +25,6 @@ On such order book marketplaces, users need to adjust their NFTs’ prices manua
 Furthermore, most current NFT marketplaces have a very high trading fees percentage, i.e. around 4-7% for both sellers and buyers. This trading fee is very high compared to what it is in fungible trading markets. We believe that this is also one of the reasons why NFT trading volume is very low compared to fungible asset trading volume.
 
 
-### Project Details
-
-The NearFT AMM is designed to facilitate a new way to trade NFTs. The goal is to ensure that anyone can add liquidity to an NFT collection and earn trading fees. The AMM will use the supported linear curves to solve the NFT liquidity problem. There will be 3 types of pools in NearFT: 
-
-* NFT pool: Pool creators deposit only their NFT and specify a token P that they are willing to receive as payment token (can be native token like Near or Stable coin, or even any other token on the chain) when users buy their NFTs from the pool. The creators will receive the specified token P as others swap their tokens for the NFTs in the pools. The creators can set an initial floor price in the token P. The price of NFTs in the pool will be automatically increased when users trade P for NFTs. This is a great way for content creators to monetize their artworks by creating NFT pools.
-* Token pool: Pool creators deposit only their specified payment token P and denote the NFT they are willing to buy. The pool creator can set an initial price in P for NFTs that the pool owner is willing to buy. Any user that owns an NFT specified by the pool can sell the NFT for an amount of token P.
-* TRADING pool: Pool creators can create a pool by:
-Specifying a payment token P and an NFT collection contract
-Deposit a list of NFTs from the collection to the pool
-Deposit an initial liquidity in P for the pool
-It is similar to a UniSwap liquidity pool. The creator can set the initial price for NFTs in the pool. 
-Anyone can buy/sell NFTs using NEAR. Creators of these pools will mostly earn trading fees from the pools.
-
 #### Unique features in TRADING pools:
 * Pool creators can set a time period that specifies a locked period for their initial liquidity. A pool creator then can only withdraw their provided initial liquidity after the locked period. The locked period will be then fully on-chain and transparent to all users
 * Liquidity provision: Any one can provide liquidity to a trading by providing a list of NFT tokens from the same collection specified by the pool and a corresponding amount of the payment token specified by the pool. The amount of the payment token to provide is equal to the number of provided NFTs multiplied by the NFT price in the pool at the time the user provides liquidity. Once provided, the user will be given Liquidity Pool (LP) token for that pool that is proportional to the pool share they have in the pool
